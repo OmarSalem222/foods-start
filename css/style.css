@@ -1,0 +1,424 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+section{
+    padding: 70px 0;
+}
+
+.container{
+    padding: 0;
+}
+
+.row{
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/********************************** Header **********************************/
+
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+}
+
+.main-nav a{
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.main-nav a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.hero{
+    position: absolute;
+    top: 40%;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero a{
+    border: 1px solid orange;
+    padding: 8px 20px;
+    margin-right: 15px;
+    color: orange;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .2s;
+}
+.hero a:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+/********************************** Features **********************************/
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 25px auto;
+    background-color: orange;
+}
+
+.features-desc{
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.feature{
+    padding: 0 30px;
+}
+
+.feature i{
+    color: orange;
+    font-size: 3rem;
+}
+
+.feature h3{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.feature p{
+    line-height: 1.5;
+}
+
+/********************************** meals **********************************/
+
+.meal{
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.meal img{
+    width: 100%;
+    opacity: .7;
+    transform: scale(1.2);
+    transition: .4s;
+}
+.meal img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/********************************** how **********************************/
+
+#how{
+    background-color: rgb(245, 245, 245);
+}
+
+.work:first-child{
+    text-align: right;
+    padding-right: 5%;
+}
+
+.work:first-child img{
+    width: 40%;
+}
+
+.work:last-child{
+    padding-left: 5%;
+    padding-top: 50px;
+}
+
+.step{
+    margin-bottom: 40px;
+}
+
+.step span{
+    width: 50px;
+    height: 50px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.step p{
+    line-height: 1.5;
+}
+
+.btn-app{
+    margin-top: 65px;
+}
+
+.btn-app img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+/********************************** cities **********************************/
+
+.city{
+    padding: 20px;
+}
+
+.city img{
+    width: 100%;
+}
+
+.city h3{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.city ul{
+    list-style: none;
+    padding-left: 5px;
+}
+.city ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.city ul li i{
+    margin-right: 20px;
+    color: orange;
+}
+.city ul li p{
+    margin: 8px 0;
+}
+.city ul li a{
+    color: orange;
+}
+
+/********************************** testimonials **********************************/
+
+#testimonials{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url(../images/back-customers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#testimonials i{
+    font-size: 4rem;
+}
+
+#testimonials p{
+    line-height: 1.5;
+}
+
+#testimonials img{
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+/********************************** plans **********************************/
+
+#plans{
+    background-color: rgb(240, 240, 240);
+}
+
+.plan{
+    background-color: #fff;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.plan-head, .plan-btn{
+    background-color: rgb(249, 249, 249);
+    padding: 15px;
+}
+.plan-adv{
+    padding: 5px 15px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.plan-head h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.plan-head .price{
+    color: orange;
+}
+
+.plan-head .price span{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.plan-adv li{
+    margin: 25px 0;
+}
+
+.plan-adv i{
+    color: orange;
+    margin-right: 20px;
+}
+
+.plan-btn a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 165px;
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 12px 0;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    transition: .2s;
+}
+.plan-btn a:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+/********************************** contact **********************************/
+
+form{
+    margin-top: 50px;
+}
+
+label{
+    margin-bottom: 12px;
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea{
+    margin: 6px 0;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    width: 100%;
+}
+input[type='checkbox']{
+    margin: 12px 0;
+}
+
+button{
+    padding: 15px 35px;
+    background-color: orange;
+    color: #fff;
+    border: 1px solid orange;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .2s;
+}
+button:hover{
+    color: orange;
+    background-color: #fff;
+}
+
+/********************************** footer **********************************/
+
+footer{
+    background-color: #333;
+    color: #eee;
+    padding: 40px 0;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-nav, .social-nav{
+    display: flex;
+}
+
+.footer-nav li, .social-nav li{
+    margin-right: 20px;
+}
+
+.footer-nav li a, .social-nav li a{
+    text-decoration: none;
+    color: #eee;
+}
+.footer-nav li a:hover, .social-nav li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.social-nav{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .work:first-child{
+        text-align: center;
+    }
+}
