@@ -58,6 +58,64 @@ nav{
     text-decoration: underline;
 }
 
+.icon-nav{
+    position: relative;
+    display: none;
+}
+
+.icon-nav i{
+    color: #fff;
+    padding: 10px;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+.icon-nav i:hover + .icon-main-nav{
+    display: block;
+}
+
+.icon-main-nav{
+    position: absolute;
+    list-style: none;
+    padding-left: 0;
+    background-color: #fff;
+    padding: 0 40px;
+    left: -126px;
+    top: 46px;
+    border-radius: 10px;
+    display: none;
+    width: 110px;
+}
+.icon-main-nav::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    left: 75%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.icon-main-nav:hover{
+    display: block;
+}
+
+.icon-main-nav li{
+    margin: 15px 0;
+}
+
+.icon-main-nav a{
+    text-decoration: none;
+    color: orange;
+}
+.icon-main-nav a:hover{
+    text-decoration: underline;
+}
+
+
 .hero{
     position: absolute;
     top: 40%;
@@ -95,6 +153,8 @@ h2{
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    line-height: 1.5;
+    padding: 0 5px;
 }
 h2::after{
     content: "";
@@ -114,6 +174,7 @@ h2::after{
 
 .feature{
     padding: 0 30px;
+    margin-bottom: 40px;
 }
 
 .feature i{
@@ -201,6 +262,7 @@ h2::after{
 
 .city{
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 .city img{
@@ -257,6 +319,7 @@ h2::after{
     border-radius: 50%;
     margin-right: 15px;
     vertical-align: middle;
+    margin-bottom: 40px;
 }
 
 /********************************** plans **********************************/
@@ -394,7 +457,7 @@ footer p{
 }
 
 .social-nav{
-    float: right;
+    flex-direction: row-reverse;
 }
 
 
@@ -412,7 +475,38 @@ footer p{
 
 
 
+@media screen and (max-width: 862px) {
+    nav{
+        padding: 0 20px;
+    }
+    .main-nav{
+        display: none;
+    }
+    .icon-nav{
+        display: block;
+    }
 
+    .hero{
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .features-desc{
+        width: 90%;
+        text-align: center;
+    }
+
+    iframe{
+        margin-bottom: 50px;
+    }
+
+    footer ul{
+        justify-content: space-around;
+    }
+    .social-nav{
+        padding: 0 100px;
+    }
+}
 
 
 
